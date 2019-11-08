@@ -1,1 +1,21 @@
 // Mixins in here
+
+.border(){
+    border-bottom: 2px dashed #C0C0C0;
+    padding-bottom:30px;
+}
+
+.btn-theme(@color:@eastern-blue, @font:white, @size:200px){
+    display:flex;
+    background-color:@color;
+    width:@size;
+    height:45px;
+    font-size:2rem;
+    border-radius:2rem;
+    color:@font;
+};
+
+
+.content-width(){
+    width:85%;
+}
