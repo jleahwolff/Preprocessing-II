@@ -1,1 +1,52 @@
 // Navigation Styles here
+
+nav{
+    border-bottom: @navigation-border;
+    margin:0 auto;
+    .border();
+    // max-width:800px;
+    // margin: 0 auto;
+    #nav{
+        display:flex;
+        justify-content:space-between;
+        padding-top:3%;
+        align-items:center;
+        width:800px;
+        margin:0 auto;
+
+        @media @mobile{
+            width:100%;
+        }
+
+        h1{
+            width:50%;
+
+            @media @mobile{
+                width:100%;
+                text-align:center;
+                padding:2%;
+            }
+        }
+        #links{ 
+            display:flex;
+            justify-content:space-between;
+            width:50%;
+
+            @media @mobile{
+                width:100%;
+                justify-content: space-around;
+            }
+
+            a{
+                text-decoration: none;
+                color:@shark;
+                font-size:1.5rem;
+            }
+        }
+    }
+    @media @mobile{
+        flex-direction:column;
+
+    }
+}
+
