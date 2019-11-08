@@ -3,6 +3,7 @@
 nav{
     border-bottom: @navigation-border;
     margin:0 auto;
+    width:100%;
     .border();
     // max-width:800px;
     // margin: 0 auto;
@@ -11,20 +12,21 @@ nav{
         justify-content:space-between;
         padding-top:3%;
         align-items:center;
-        width:800px;
+        width:57%;
         margin:0 auto;
 
         @media @mobile{
             width:100%;
+            flex-direction:column;
         }
 
         h1{
             width:50%;
 
             @media @mobile{
-                width:100%;
+                width:80%;
                 text-align:center;
-                padding:2%;
+                padding:2%; 
             }
         }
         #links{ 
@@ -33,7 +35,7 @@ nav{
             width:50%;
 
             @media @mobile{
-                width:100%;
+                width:80%;
                 justify-content: space-around;
             }
 
